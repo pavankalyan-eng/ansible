@@ -1,5 +1,5 @@
 - name: nginx
-  hosts: web
+  hosts: 192.168.74.135
   tasks:
   - name: install nginx
     ansible.builtin.package:
