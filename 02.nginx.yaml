@@ -11,3 +11,19 @@
       name: nginx
       state: started
       enabled: yes    
+
+
+
+- name: nginx mysql and run
+  hosts: nginx
+  tasks:
+  - name: install mysql
+    ansible.builtin.dnf:
+      name: mysql
+      state: present
+
+  - name: run mysql
+    ansible.builtin.systemd:
+      name: mysql
+      state: started
+      enabled: yes    
