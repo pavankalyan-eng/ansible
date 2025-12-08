@@ -14,8 +14,8 @@
 
 
 
-- name: nginx mysql and run
-  hosts: nginx
+- name: mysql and run
+  hosts: mysql
   tasks:
   - name: install mysql
     ansible.builtin.dnf:
