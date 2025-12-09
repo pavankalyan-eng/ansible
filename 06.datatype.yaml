@@ -2,20 +2,20 @@
   hosts: local
   connection: local
   vars:
-  course: "devops with aws"
-  duration: 120
-  topics:
-  - linux
-  - shell
-  - ansible
-  live: true
-  tools:
-   ci: jennkins
-   cm: ansible
-   cloud: aws
-   aws:
-   - s3
-   - iam
+    course: "devops with aws"
+    duration: 120
+    topics:
+    - linux
+    - shell
+    - ansible
+    live: true
+    tools:
+      ci: jennkins
+      cm: ansible
+      cloud: aws
+      aws:
+      - s3
+      - iam
   tasks:
   - name: print course
     ansible.builtin.debug:
