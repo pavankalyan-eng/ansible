@@ -1,9 +1,7 @@
 - name: print the varibles
   hosts: nginx
-  vars:
-    course: "Devops with Aws"
-    duration: "120HRS"
-    trainer: "pavan"
+  vars_files:
+  - vars.yaml
   tasks:
   - name: print info
     ansible.builtin.debug:
