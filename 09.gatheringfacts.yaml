@@ -5,3 +5,14 @@
   - name: print the facts
     ansible.builtin.debug:
       msg: "facts are {{ ansible_facts }}"
+
+
+  - name: install nginx if redhat
+    ansible.builtin.dnf:
+      name: nginx
+      state: present
+
+  - name: install nginx if ubantu
+    ansible.builtin.apt:
+      name: nginx
+      state: present
