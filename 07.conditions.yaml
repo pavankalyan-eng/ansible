@@ -1,5 +1,5 @@
 - name: check a number
-  hosts: local
+  hosts: web
   connection: local
   vars_prompt:
   - name: mynumber
