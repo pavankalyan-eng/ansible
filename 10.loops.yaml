@@ -20,6 +20,6 @@
       enabled: yes
     loop:
     - postfix
-    - mysql
+    - mysqld
     - httpd
     - vsftpd
