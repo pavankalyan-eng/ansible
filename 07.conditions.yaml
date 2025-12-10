@@ -2,10 +2,10 @@
   hosts: web
   connection: local
   vars_prompt:
-  - name: mynumber
+  - name: my_number
     prompt: please enter the number
   tasks: 
   - name: print the number
     ansible.builtin.debug:
-      msg: "my number is {{mynumber}} is less then 10"
-    when: mynumber | int < 10  
+      msg: "my number is {{my_number}} is less then 10"
+    when: my_number | int < 10  
