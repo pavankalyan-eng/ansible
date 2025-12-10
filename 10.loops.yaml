@@ -6,7 +6,6 @@
     ansible.builtin.package:
       name: "{{ item }}"
       state: present
-      enabled: yes
     
   - name: start and run
     ansible.builtin.service:
