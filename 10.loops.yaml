@@ -5,7 +5,7 @@
   - name: install package
     ansible.builtin.package:
       name: "{{ item }}"
-      state: present
+      state: started
       enabled: yes
 
     loop:
