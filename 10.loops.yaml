@@ -1,5 +1,5 @@
 - name: install packages using loop
-  hosts: server
+  hosts: all
   become: yes
   tasks:
   - name: install package
